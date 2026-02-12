@@ -1,0 +1,17 @@
+# Python virtual environment
+ansible-env/
+venv/
+
+# AWS credentials
+.aws/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# Terraform (if used later)
+.terraform/
+terraform.tfstate*
