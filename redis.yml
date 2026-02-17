@@ -2,7 +2,7 @@
   hosts: redis
   become: yes
   tasks:
-  - name: enable redis
+  - name: enable redis 7
     ansible.builtin.command: dnf module enable redis:7 -y
 
   - name: install redis
@@ -23,7 +23,7 @@
       line: 'protected-mode no'
 
   - name: start and enable redis
-    ansible.builtin.service:
+    ansible.builtin.service: 
       name: redis
       state: restarted
-      enable: yes
+      enabled: yes
