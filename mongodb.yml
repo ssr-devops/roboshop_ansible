@@ -1,4 +1,4 @@
-- name: mongodb configure
+- name : mongodb configure
   hosts: mongodb
   become: yes
   tasks:
@@ -11,7 +11,7 @@
     ansible.builtin.dnf:
       name: mongodb-org
       state: present
-  
+
   - name: allow remote connections
     ansible.builtin.replace:
       path: /etc/mongod.conf
