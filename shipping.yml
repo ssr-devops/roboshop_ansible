@@ -68,7 +68,7 @@
       name: PyMySQL
       executable: pip3.9
   
-  - name: Load Schema, Schema in database
+  - name: import shipping data
     community.mysql.mysql_db:
       state: import
       name: all
