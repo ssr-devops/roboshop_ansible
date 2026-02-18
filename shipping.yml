@@ -7,7 +7,7 @@
       name: "{{ item }}"
       state: present
     loop:
-      - mavan
+      - maven
       - mysql
 
   - name: create system user roboshop
